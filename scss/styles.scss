@@ -1,0 +1,91 @@
+@import "miscs";
+@import url("https://fonts.googleapis.com/css2?family=Archivo&family=Archivo+Black&display=swap");
+
+* {
+	cursor: url(../assets/normal.ico), auto;
+}
+
+:root {
+	--yellow: #fed766;
+	--pink: #fe4974;
+	--blue: #2dc5dc;
+	--light-blue: #3fdcf4;
+}
+
+body {
+	background-color: white;
+	background-image: url(../assets/bg-pattern.png);
+	background-repeat: repeat;
+	height: 100vh;
+	@include flex(normal);
+
+	.main-wrapper {
+		background-color: white;
+		width: 60vw;
+		height: 40vw;
+		border: 2px solid black;
+		box-shadow: -15px 15px 0 0 black;
+		@include flex(acencol);
+		flex-direction: column;
+		padding-top: 4vw;
+
+		.drop-shadow {
+			box-shadow: -10px 10px 0 0 black;
+			font-family: "Archivo Black", sans-serif;
+
+			&:hover {
+				box-shadow: none;
+				translate: -10px 10px;
+			}
+			transition: 200ms;
+			-webkit-transition: 200ms;
+			-moz-transition: 200ms;
+			-ms-transition: 200ms;
+			-o-transition: 200ms;
+            border-radius: 15px;
+			-webkit-border-radius: 15px;
+			-moz-border-radius: 15px;
+			-ms-border-radius: 15px;
+			-o-border-radius: 15px;
+		}
+
+		.bottomBtn {
+            border: 2px solid black;
+			width: fit-content;
+			padding: 15px 20px;
+            cursor: url(../assets/point.ico), auto !important;
+		}
+
+		.title-container {
+			@include flex(acencol);
+			gap: 0.5rem;
+		}
+
+		.title-heading {
+			letter-spacing: 4px;
+			font-size: 3.5vw;
+			color: white;
+			-webkit-text-stroke: 2px black;
+			border: 2px solid black;
+			width: fit-content;
+			padding: 15px 40px;
+
+			&.yellow {
+				background-color: var(--yellow);
+				rotate: -2.55deg;
+				z-index: 100;
+			}
+			&.blue {
+				color: var(--blue);
+				rotate: 2.55deg;
+				background-color: white;
+			}
+		}
+
+		border-radius: 25px;
+		-webkit-border-radius: 25px;
+		-moz-border-radius: 25px;
+		-ms-border-radius: 25px;
+		-o-border-radius: 25px;
+	}
+}

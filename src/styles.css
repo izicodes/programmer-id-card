@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Onest&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Geologica&family=Gideon+Roman&family=Gloock&family=Pixelify+Sans&family=Playfair:opsz@5..1200&family=Ysabeau+SC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&family=Ubuntu+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo&family=Archivo+Black&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  cursor: url(../assets/normal.ico), auto;
+}
+
+:root {
+  --yellow: #fed766;
+  --pink: #fe4974;
+  --blue: #2dc5dc;
+  --light-blue: #3fdcf4;
+}
+
+body {
+  background-color: white;
+  background-image: url(../assets/bg-pattern.png);
+  background-repeat: repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .main-wrapper {
+  background-color: white;
+  width: 60vw;
+  height: 40vw;
+  border: 2px solid black;
+  box-shadow: -15px 15px 0 0 black;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-direction: column;
+  padding-top: 4vw;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+body .main-wrapper .drop-shadow {
+  box-shadow: -10px 10px 0 0 black;
+  font-family: "Archivo Black", sans-serif;
+  transition: 200ms;
+  -webkit-transition: 200ms;
+  -moz-transition: 200ms;
+  -ms-transition: 200ms;
+  -o-transition: 200ms;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+body .main-wrapper .drop-shadow:hover {
+  box-shadow: none;
+  translate: -10px 10px;
+}
+body .main-wrapper .bottomBtn {
+  border: 2px solid black;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 15px 20px;
+  cursor: url(../assets/point.ico), auto !important;
+}
+body .main-wrapper .title-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+body .main-wrapper .title-heading {
+  letter-spacing: 4px;
+  font-size: 3.5vw;
+  color: white;
+  -webkit-text-stroke: 2px black;
+  border: 2px solid black;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 15px 40px;
+}
+body .main-wrapper .title-heading.yellow {
+  background-color: var(--yellow);
+  rotate: -2.55deg;
+  z-index: 100;
+}
+body .main-wrapper .title-heading.blue {
+  color: var(--blue);
+  rotate: 2.55deg;
+  background-color: white;
+}/*# sourceMappingURL=styles.css.map */
