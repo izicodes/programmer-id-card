@@ -27,12 +27,12 @@ body {
 		box-shadow: -15px 15px 0 0 black;
 
 		.drop-shadow {
-			box-shadow: -10px 10px 0 0 black;
+			box-shadow: -0.5vw 0.5vw 0 0 black;
 			font-family: "Archivo Black", sans-serif;
 
 			&:hover {
 				box-shadow: none;
-				translate: -10px 10px;
+				translate: -0.5vw 0.5vw;
 			}
 			transition: 200ms;
 			-webkit-transition: 200ms;
@@ -62,6 +62,7 @@ body {
 			flex-direction: column;
 			height: 100%;
             gap: 2vw;
+
 
 			.title-container {
 				@include flex(acencol);
@@ -101,6 +102,11 @@ body {
                 -o-transition: 200ms;
 }
 		}
+
+        .image-select {
+            display: none;
+            
+        }
 
 		border-radius: 25px;
 		-webkit-border-radius: 25px;

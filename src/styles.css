@@ -41,7 +41,7 @@ body .main-wrapper {
   -o-border-radius: 25px;
 }
 body .main-wrapper .drop-shadow {
-  box-shadow: -10px 10px 0 0 black;
+  box-shadow: -0.5vw 0.5vw 0 0 black;
   font-family: "Archivo Black", sans-serif;
   transition: 200ms;
   -webkit-transition: 200ms;
@@ -56,7 +56,7 @@ body .main-wrapper .drop-shadow {
 }
 body .main-wrapper .drop-shadow:hover {
   box-shadow: none;
-  translate: -10px 10px;
+  translate: -0.5vw 0.5vw;
 }
 body .main-wrapper .bottomBtn {
   border: 2px solid black;
@@ -113,4 +113,7 @@ body .main-wrapper .start-page .bottomBtn {
 }
 body .main-wrapper .start-page .bottomBtn:hover {
   background-color: var(--light-blue);
+}
+body .main-wrapper .image-select {
+  display: none;
 }/*# sourceMappingURL=styles.css.map */
