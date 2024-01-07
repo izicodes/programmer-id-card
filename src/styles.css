@@ -30,15 +30,10 @@ body {
 }
 body .main-wrapper {
   background-color: white;
-  width: 60vw;
-  height: 40vw;
+  width: 52vw;
+  height: 35vw;
   border: 2px solid black;
   box-shadow: -15px 15px 0 0 black;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  flex-direction: column;
-  padding-top: 4vw;
   border-radius: 25px;
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
@@ -67,32 +62,55 @@ body .main-wrapper .bottomBtn {
   border: 2px solid black;
   width: -moz-fit-content;
   width: fit-content;
-  padding: 15px 20px;
+  padding: 10px 0px;
   cursor: url(../assets/point.ico), auto !important;
+  width: 80%;
+  font-size: 1.5vw;
+  position: sticky;
 }
-body .main-wrapper .title-container {
+body .main-wrapper .start-page {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-direction: column;
+  height: 100%;
+  gap: 2vw;
+}
+body .main-wrapper .start-page .title-container {
   display: flex;
   align-items: center;
   flex-direction: column;
   gap: 0.5rem;
 }
-body .main-wrapper .title-heading {
-  letter-spacing: 4px;
-  font-size: 3.5vw;
+body .main-wrapper .start-page .title-heading {
+  letter-spacing: 4.5px;
+  font-size: 3.2vw;
   color: white;
-  -webkit-text-stroke: 2px black;
+  -webkit-text-stroke: 1px black;
   border: 2px solid black;
   width: -moz-fit-content;
   width: fit-content;
-  padding: 15px 40px;
+  padding: 0.8vw 1.5vw;
 }
-body .main-wrapper .title-heading.yellow {
+body .main-wrapper .start-page .title-heading.yellow {
   background-color: var(--yellow);
   rotate: -2.55deg;
   z-index: 100;
 }
-body .main-wrapper .title-heading.blue {
+body .main-wrapper .start-page .title-heading.blue {
   color: var(--blue);
   rotate: 2.55deg;
   background-color: white;
+}
+body .main-wrapper .start-page .bottomBtn {
+  background-color: var(--blue);
+  transition: 200ms;
+  -webkit-transition: 200ms;
+  -moz-transition: 200ms;
+  -ms-transition: 200ms;
+  -o-transition: 200ms;
+}
+body .main-wrapper .start-page .bottomBtn:hover {
+  background-color: var(--light-blue);
 }/*# sourceMappingURL=styles.css.map */
